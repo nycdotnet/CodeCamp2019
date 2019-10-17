@@ -1,22 +1,24 @@
 ﻿using Codecamp.Sessions;
+using CodeCamp.Data;
 using Grpc.Core;
 using System;
 using System.Threading.Tasks;
 
-namespace CodeCamp.Services
+namespace CodeCamp.Server.GoogleGrpc
 {
     class Program
     {
-        static async Task Main(string[] args)
+        static async Task Main(string[] _)
         {
-            var server = new Server
+            const int port = 50051;
+            var server = new Grpc.Core.Server
             {
-                Services = { Sessions.BindService(new SessionsService()) },
-                Ports = { new ServerPort("localhost", 50051, ServerCredentials.Insecure) }
+                Services = { Sessions.BindService(new SessionsService(new SessionsRepository())) },
+                Ports = { new ServerPort("localhost", port, ServerCredentials.Insecure) }
             };
             server.Start();
             
-            Console.WriteLine("server is running!");
+            Console.WriteLine($"server is listening on port {port}!");
             
             await server.ShutdownTask;
         }

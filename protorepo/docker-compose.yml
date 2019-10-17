@@ -9,11 +9,9 @@ services:
       - csharp
       - -o
       - ./gen/feedback/
-      - -i
-      - protorepo
     image: namely/protoc-all:1.23_0
     volumes:
-      - .:/defs
+      - ..:/defs
 
   protogen-sessions:
     entrypoint:
@@ -26,4 +24,4 @@ services:
       - ./gen/sessions/
     image: namely/protoc-all:1.23_0
     volumes:
-      - .:/defs
+      - ..:/defs

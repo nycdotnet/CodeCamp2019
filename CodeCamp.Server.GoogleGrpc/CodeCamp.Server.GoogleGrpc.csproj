@@ -12,17 +12,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="C:\Users\SteveOgnibene\Documents\GitHub\CodeCamp2019\sessions\sessions.txt" Link="sessions.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Google.Protobuf" Version="3.8.0" />
     <PackageReference Include="Grpc" Version="2.23.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CodeCamp.Data\CodeCamp.Data.csproj" />
     <ProjectReference Include="..\CodeCamp.Grpc\CodeCamp.Grpc.csproj" />
   </ItemGroup>
 

@@ -12,20 +12,27 @@ namespace CodeCamp.ConsoleClient
         static async Task Main(string[] args)
         {
             var channel = new Channel("localhost", 50051, ChannelCredentials.Insecure);
-            
             var client = new SessionsClient(channel);
+            var sw = new Stopwatch();
 
             while (true)
             {
-                await Task.Delay(1000);
-                var sw = new Stopwatch();
-                sw.Restart();
-                var response = await client.GetSessionsAsync(new GetSessionsRequest { TitleStartsWith = "H" });
-                sw.Stop();
-                Console.WriteLine($"Found {response.Sessions.Count} sessions in {sw.ElapsedTicks / 10} us ({sw.ElapsedMilliseconds} ms)");
-                foreach(var session in response.Sessions)
+                for (int i = 'A'; i <= 'Z'; i++) // yep, this will cycle A-Z
                 {
-                    Console.WriteLine($"{session.Title} by {session.SpeakerName}");
+                    var startsWith = new string((char)i, 1);
+                    sw.Restart();
+                    var response = await client.GetSessionsAsync(new GetSessionsRequest { TitleStartsWith = startsWith });
+                    sw.Stop();
+                    Console.WriteLine($"Found {response.Sessions.Count} sessions starting with {startsWith} in {sw.ElapsedTicks / 10} μs ({sw.ElapsedMilliseconds} ms)");
+                    foreach (var session in response.Sessions)
+                    {
+                        Console.WriteLine($"{session.Title} by {session.SpeakerName}");
+                    }
+                    Console.WriteLine("");
+                    if (response.Sessions.Count > 0)
+                    {
+                        await Task.Delay(2_000);
+                    }
                 }
             }
         }

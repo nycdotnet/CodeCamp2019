@@ -18,6 +18,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeCamp.Data", "CodeCamp.Data\CodeCamp.Data.csproj", "{4ED5F5FE-CBE0-4BE2-A617-F2FF483FC90A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +46,10 @@ Global
 		{32049BF0-4862-41BE-AA66-2952A8FA45E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32049BF0-4862-41BE-AA66-2952A8FA45E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32049BF0-4862-41BE-AA66-2952A8FA45E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ED5F5FE-CBE0-4BE2-A617-F2FF483FC90A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ED5F5FE-CBE0-4BE2-A617-F2FF483FC90A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ED5F5FE-CBE0-4BE2-A617-F2FF483FC90A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ED5F5FE-CBE0-4BE2-A617-F2FF483FC90A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

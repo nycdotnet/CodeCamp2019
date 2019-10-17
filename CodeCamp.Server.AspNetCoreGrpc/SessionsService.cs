@@ -7,7 +7,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using static Codecamp.Sessions.Sessions;
 
-namespace CodeCamp.Server.GoogleGrpc
+namespace CodeCamp.Server.AspNetCoreGrpc
 {
     public class SessionsService : SessionsBase
     {
@@ -35,7 +35,8 @@ namespace CodeCamp.Server.GoogleGrpc
             // returning the strings of the session data and letting each project convert to its own version of `Session`.
             foreach (var row in sessionsRepo.GetSessions())
             {
-                yield return new Session {
+                yield return new Session
+                {
                     Room = row[0],
                     TimeSlot = row[1],
                     SpeakerName = row[2],
