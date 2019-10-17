@@ -1,0 +1,29 @@
+version: "3.7"
+services:
+  protogen-feedback:
+    entrypoint:
+      - entrypoint.sh
+      - -f
+      - protorepo/feedback/service.proto
+      - -l
+      - csharp
+      - -o
+      - ./gen/feedback/
+      - -i
+      - protorepo
+    image: namely/protoc-all:1.23_0
+    volumes:
+      - .:/defs
+
+  protogen-sessions:
+    entrypoint:
+      - entrypoint.sh
+      - -f
+      - protorepo/sessions/service.proto
+      - -l
+      - csharp
+      - -o
+      - ./gen/sessions/
+    image: namely/protoc-all:1.23_0
+    volumes:
+      - .:/defs

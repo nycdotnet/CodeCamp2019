@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <Compile Include="..\gen\**\*.cs" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Google.Api.Gax.Grpc" Version="2.9.0" />
+    <PackageReference Include="Google.Protobuf" Version="3.8.0" />
+    <PackageReference Include="Grpc" Version="2.23.0" />
+  </ItemGroup>
+
+</Project>

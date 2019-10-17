@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+// this is typically an org identifier followed by the service identifier
+// a service defined across many files would have the same package name in each.
+package codecamp.sessions;
+
+service Sessions {
+    // returns the sessions that will happen at CodeCamp
+    rpc GetSessions(GetSessionsRequest) returns (GetSessionsResponse) {};
+}
+
+message GetSessionsRequest {
+    // optional - will filter the list of sessions to include only those that start
+    // with the provided string.  If empty, will return sessions with any title.
+    string title_starts_with = 1;
+}
+
+// stuff to return from the service
+message GetSessionsResponse {
+    repeated Session sessions = 1;
+}
+
+// describes a session at CodeCamp 2019
+message Session {
+    string room = 1;
+    string time_slot = 2;
+    // the name of the speaker
+    string speaker_name = 3;
+    string title = 4;
+    string abstract = 5;
+    string level = 6;
+    SpeakerStatus speaker_status = 7;
+}
+
+enum SpeakerStatus {
+    SPEAKER_STATUS_UNSPECIFIED = 0;
+    SPEAKER_STATUS_FIRST_TIME = 1;
+    SPEAKER_STATUS_RETURNING = 2;
+    SPEAKER_STATUS_FIVE_OR_MORE = 3;
+}

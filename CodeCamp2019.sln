@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29403.142
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeCamp.Server.GoogleGrpc", "CodeCamp.Server.GoogleGrpc\CodeCamp.Server.GoogleGrpc.csproj", "{67CB5783-4A91-4972-B936-FFFB8A02C84B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeCamp.Grpc", "CodeCamp.Grpc\CodeCamp.Grpc.csproj", "{4D451791-E546-441F-B4AC-6B58880A1029}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeCamp.Client.Console", "CodeCamp.Client.Console\CodeCamp.Client.Console.csproj", "{F4DC00B9-88D4-46E0-B370-EE429F0FEDE5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeCamp.Demo.ProtoSerialization", "CodeCamp.Demo.ProtoSerialization\CodeCamp.Demo.ProtoSerialization.csproj", "{D9DF6E61-F7D3-43CB-B51C-DFC59BE1214D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeCamp.Server.AspNetCoreGrpc", "CodeCamp.Server.AspNetCoreGrpc\CodeCamp.Server.AspNetCoreGrpc.csproj", "{32049BF0-4862-41BE-AA66-2952A8FA45E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{488602B1-E865-41F2-9D2C-3DFC918C77FF}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67CB5783-4A91-4972-B936-FFFB8A02C84B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67CB5783-4A91-4972-B936-FFFB8A02C84B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67CB5783-4A91-4972-B936-FFFB8A02C84B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67CB5783-4A91-4972-B936-FFFB8A02C84B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D451791-E546-441F-B4AC-6B58880A1029}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D451791-E546-441F-B4AC-6B58880A1029}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D451791-E546-441F-B4AC-6B58880A1029}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D451791-E546-441F-B4AC-6B58880A1029}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4DC00B9-88D4-46E0-B370-EE429F0FEDE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4DC00B9-88D4-46E0-B370-EE429F0FEDE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4DC00B9-88D4-46E0-B370-EE429F0FEDE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4DC00B9-88D4-46E0-B370-EE429F0FEDE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9DF6E61-F7D3-43CB-B51C-DFC59BE1214D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9DF6E61-F7D3-43CB-B51C-DFC59BE1214D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9DF6E61-F7D3-43CB-B51C-DFC59BE1214D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9DF6E61-F7D3-43CB-B51C-DFC59BE1214D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32049BF0-4862-41BE-AA66-2952A8FA45E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32049BF0-4862-41BE-AA66-2952A8FA45E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32049BF0-4862-41BE-AA66-2952A8FA45E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32049BF0-4862-41BE-AA66-2952A8FA45E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {03EC7407-F3C1-47DA-9604-9BAC5DED395C}
+	EndGlobalSection
+EndGlobal

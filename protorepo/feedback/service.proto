@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+// this is typically an org identifier followed by the service identifier
+// a service defined across many files would have the same package name in each.
+package codecamp.feedback;
+
+import "google/protobuf/empty.proto";
+import "google/type/money.proto";
+import "google/type/date.proto";
+
+service Feedback {
+    rpc SendFeedback(SendFeedbackRequest) returns (google.protobuf.Empty) {};
+}
+
+message SendFeedbackRequest {
+    string title = 1;
+    Rating rating = 2;
+    google.type.Date date_of_session = 3;
+    google.type.Money money_paid = 4;
+}
+
+enum Rating {
+    RATING_UNSPECIFIED = 0;
+    RATING_BAD = 1;
+    RATING_FAIR = 2;
+    RATING_GOOD = 3;
+    RATING_GREAT = 4;
+}
