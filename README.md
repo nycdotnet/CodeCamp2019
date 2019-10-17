@@ -9,7 +9,7 @@ https://twitter.com/nycdotnet
 
 I gave a presentation at Code Camp NYC 2019 called gRPC with .NET Core in Production.
 
-The presentation is available [here](presentation/gRPC with .NET Core in prod - CodeCamp.pptx) and is licensed to you by Steve Ognibene under [Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+The presentation is available [here](https://github.com/nycdotnet/CodeCamp2019/blob/master/Presentation/gRPC%20with%20.NET%20Core%20in%20prod%20-%20CodeCamp.pptx) and is licensed to you by Steve Ognibene under [Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
 The Code Camp NYC 2019 schedule is available [here](CodeCamp.Data/sessions.csv) and is licensed to you by Code Camp NYC, also under [Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
