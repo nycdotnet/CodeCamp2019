@@ -1,12 +1,16 @@
+# License Info
 The file at https://github.com/nycdotnet/CodeCamp2019/blob/master/Presentation/gRPC%20with%20.NET%20Core%20in%20prod%20-%20CodeCamp.pptx is licensed to you by Steve Ognibene under Creative Commons BY-SA 4.0.
 
 The file at https://github.com/nycdotnet/CodeCamp2019/blob/master/CodeCamp.Data/sessions.csv is licensed to you by Code Camp NYC under Creative Commons BY-SA 4.0.
 
 The remainder of the code in this repo is licensed to you by Steve Ognibene under the MIT License.
 
-Creative Commons BY-SA 4.0:
+## Creative Commons BY-SA 4.0:
+
 https://creativecommons.org/licenses/by-sa/4.0/
+
 https://creativecommons.org/licenses/by-sa/4.0/legalcode
+
 
 Creative Commons Attribution-ShareAlike 4.0 International Public License
 By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-ShareAlike 4.0 International Public License ("Public License"). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.
@@ -104,7 +108,8 @@ No term or condition of this Public License will be waived and no failure to com
 Nothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.
 
 
-MIT License:
+## MIT License:
+
 Copyright 2019 Steve Ognibene
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
